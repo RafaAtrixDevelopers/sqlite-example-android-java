@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SQLite Example Java</string>
+    <string name="author_credits">Developed by Rafael de Azeredo</string>
+    <string name="item_add">Adicionar</string>
+    <string name="label_idade">%1$d anos</string>
+    <string name="activity_novo_contato">Novo Contato</string>
+    <string name="activity_editar_contato">Editar Contato</string>
+</resources>

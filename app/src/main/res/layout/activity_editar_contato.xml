@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txi_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_nome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Nome *"
+            android:inputType="text"
+            android:singleLine="true"
+            android:maxLength="30"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/txi_idade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txi_nome"
+        android:layout_margin="8dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/edt_idade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Idade *"
+            android:inputType="number"
+            android:singleLine="true"
+            android:maxLength="2"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txt_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/author_credits"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:background="?attr/colorPrimary"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_done"
+        app:fabSize="normal"
+        app:useCompatPadding="true"
+        android:tint="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        tools:ignore="RelativeOverlap"/>
+</RelativeLayout>
